@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Splash Screen */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e3a674;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+}
+
+.splash-logo {
+  width: 30%;
+  height: auto;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Mensagem de carregamento concluído */
+.app-loaded {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Conteúdo principal */
+#main-content {
+  display: none;
+  padding: 20px;
+}
+
+/* Container da Paginação */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre os botões */
+  margin-top: 20px;
+}
+
+/* Estilo base para os botões/links da paginação */
+.btn-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #555;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 40px;
+  height: 40px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.btn-pagination:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+  color: #333;
+}
+
+/* Estilo do botão da página ATIVA */
+.btn-pagination.active {
+  background-color: #007bff; /* Cor principal do seu sistema */
+  color: #fff;
+  border-color: #007bff;
+  cursor: default;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn-pagination.active:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilo para os "..." (elipses) */
+.pagination-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  min-width: 40px;
+  height: 40px;
+  font-weight: 600;
+}
