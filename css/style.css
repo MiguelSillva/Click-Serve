@@ -1,0 +1,51 @@
+/* .form-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 70px;
+    margin-left: 350px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.btn {
+    position: absolute;
+    margin-bottom: 220px;
+    margin-left: 720px;
+    
+}
+
+
+.img-logo {
+    position: relative;
+    margin-left: 530px;
+   
+}
+*/
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .img-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  

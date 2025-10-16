@@ -1,0 +1,12 @@
+
+/* Custom scrollbar for the tables list */
+ .scrollbar-thin::-webkit-scrollbar {
+   width: 6px;
+ }
+ .scrollbar-thin::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ .scrollbar-thin::-webkit-scrollbar-thumb {
+   background-color: #cbd5e1;
+   border-radius: 10px;
+ }
